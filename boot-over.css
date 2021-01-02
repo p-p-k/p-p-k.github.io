@@ -1,0 +1,396 @@
+
+body {
+/*     max-width: 1500px;
+ */    margin: auto;
+    font-family: Georgia, serif;
+    color: #121212;    
+    font-size: 15px;
+}
+
+.top-menu-link {
+    padding-left: 1em;
+    
+}
+.top-menu {
+    justify-content: space-between;
+    display: flex;
+    padding: 1.5em 2% 3em;
+    font-size: 1.4em;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.top-menu .name{
+    padding-left: 15px;
+    font-weight: 700;
+    }
+
+
+.top-menu-right{
+    padding-right: 15px;
+
+}    
+.header {
+padding: 0;
+}
+.container-fluid{
+    max-width: 1500px;
+}
+footer{
+    padding: 0;
+    background-color: #eee;
+    width: 100vw;
+    font-size: 1.4em;
+    font-family: "Roboto", sans-serif;
+}
+.bottom {
+padding-bottom: 4.1em;
+
+}
+
+.bottom-menu .left{
+    padding-left: 15px;
+    padding-bottom: 1em;
+    float: left;
+
+}    
+
+
+a {
+color: #00f;
+}
+a:hover, a:focus{
+    color: #121212;
+    text-decoration: underline;
+
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+margin-top: 0;
+padding-bottom: 1.5em;
+}
+h3 {
+    padding-top: 0.5em;
+}
+.descriptor {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-variant-caps: all-small-caps;
+    font-size: 1.1em;
+    letter-spacing: 0.04em;
+    color: #777;
+    margin-top: 0.5em;
+}
+.project-page .descriptor {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 0 0 0.85em;
+}
+.main-headline{
+font-size: 5em;
+padding-bottom: 0.3em;
+line-height: 1.05em;
+text-align: center;
+max-width: 800px!important;
+}
+.lead {
+font-size: 2.14em;
+line-height: 1.25em;
+padding-bottom: 0.5em;
+text-align: center;
+
+}
+.space-below{
+padding-bottom: 2em;
+}
+
+.next-paragraph{
+    padding-top:0.625em;
+}
+.project-thumb{
+    text-align: center;
+}
+.project-title{
+    font-size: 1.7em;
+    line-height: 1.25em;
+    margin-top: 0.1em;
+    margin-bottom: 6px;
+}
+.projects{
+    padding-bottom: 4em;
+}
+.row {
+    padding: 0px 2% 0px;
+    
+}
+.top {
+    padding-top: 1.5em;
+}
+.introAndTags{
+    padding-bottom: 1.5em;
+    padding-top: 2em;
+}
+.intro {
+    font-size: 2em;
+    line-height: 1.25em;
+    padding-bottom: 0.5em;
+}
+
+
+.project-text {
+    font-size: 1.333em;
+    padding-bottom: 1em;   
+    margin: 0px; 
+}
+.info {
+    padding-top: 2rem!important;
+    padding-bottom: 6rem!important;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 1em;
+}
+p {
+    font-size: 1.333em;
+}
+   
+   .container {
+    width: 100%;
+    padding-top: 5%;
+    padding-right: 4%;
+    padding-left: 4%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.about{
+    max-width: 700px;
+    
+}
+
+.project-page {
+    padding-bottom: 2.5em;
+}
+.single-project, ul, ol, .about p {
+    max-width: 700px;
+    margin: auto;
+}
+.long-text, ul, ol{
+    font-size: 1.333em;
+    padding-bottom: 0.8em;
+    padding-top: 0.6em;
+}
+ul, ol {
+    padding-bottom: 0.2em;
+}
+li {
+    padding-bottom: 0.6em;
+}
+ol > li::marker{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.95em;
+
+}
+.about p {
+    font-size: 1.333em;
+    padding-bottom: 1.4em;
+}
+blockquote{
+    max-width: 800px;
+    margin: auto;
+    font-size: 2.14em;
+    text-align: center;
+    padding-bottom: 0.8em;
+    padding-top: 0.6em;
+    padding-left: 0;
+    padding-right: 0;
+    border-width: 2px 0px;  
+    border-color: #ddd;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.35;
+}
+.quote-source{  
+    font-size: 0.55em;
+    font-variant: all-small-caps;
+    letter-spacing: 0.05em;
+    line-height: 1.42857;
+    padding-top: 0.5em;
+/*     color: black;
+ */    /* word-spacing: -0.2em; */
+}
+.following-quote{
+    border-top: none;
+    padding-top: 0px;
+    margin-top: -0.15em;
+}
+mark {
+    background-color: #ffff80;
+    padding: 0.3em 0em;
+}
+
+
+/* .image {
+    padding: 0px 0px 3em 0px;
+} */
+.main {
+/* margin-top: -2em;
+ */margin-bottom: 1.75em;
+}
+img, .vid {
+    padding-bottom: 1em;
+    padding-top: 2em;
+}
+
+
+
+
+.caption{
+    font-size: 1.1em;
+    font-family: "Roboto", sans-serif;
+    color: #777;
+    max-width: 500px;
+    margin: auto;
+    padding-bottom: 2.5em;
+    
+}
+.info-box {
+    padding: 1.7em 0 1em 0;
+    
+}
+.project-info{
+    padding: 0.65em 0em;
+    border-top: 1px solid #C9C9C9;
+}
+
+.caption .title {
+    color: #000; 
+}
+
+.footer-link{
+padding-left: 1.2em;
+}
+.calc-button {
+    background-color: rgb(223, 223, 223);
+    border-radius: 6px;
+    padding: 2px 6px;
+    font-family: "Roboto", sans-serif;
+}
+.sans-small-caps{
+    font-variant: all-small-caps;
+letter-spacing: 0.05em;
+    } 
+
+
+
+/*           SMALL SCREEN         */
+
+@media (max-width: 671px) {
+	html,
+	body {
+        font-size: 11.5px !important;
+        
+    }
+    .top-menu {
+        padding-bottom: 1em;
+
+    }
+    h1, h2 {
+        font-size: 1.85em;
+        
+    }
+ p {
+     font-size: 1.55em;
+ }
+ .descriptor {
+    font-size: 1.65em;
+    margin-top: 0em;
+    margin-bottom: 0.4em;
+}
+.project-page .descriptor {
+    font-size: 1.75em;
+    margin: 0.55em 0 0.53em;
+}
+    .main-headline{
+        font-size: 2.8em;
+        padding-bottom: 0.3em;
+/*         padding-top: 0.85em;
+ */        
+
+        }
+    .lead {
+        font-size: 1.85em;
+        /* line-height: 1.25em; */
+        
+        }
+   
+    .subhead {
+            font-size: 1.85em;
+        }
+    .introAndTags{
+        padding-top: 1em;
+    }
+    .intro {
+        padding-top: 0em;
+    }
+    .project-title{
+        font-size: 2em !important;
+        
+    }
+    .project-text {
+        font-size: 1.55em;
+        padding-bottom: 1.5em;
+    }
+    .info {
+        padding-top: 0!important;
+        padding-bottom: 3.5rem!important;
+/*         font-size: 1.55em !important;
+ */    }
+    .long-text, ul, ol{
+        font-size: 1.55em;
+    }
+    ul, ol {
+        padding-left: 25px;
+    }
+    .about p {
+        font-size: 1.55em;
+        padding-bottom: 1.4em;
+    }
+    .caption {
+        font-size: 1.4em;
+        padding-bottom: 1.8em;
+        max-width: 350px;
+    }
+    blockquote{
+        font-size: 2em;
+    }
+    .quote-source{
+        font-size: 0.8em;
+        line-height: 1.2;
+        padding-top: 0.3em;
+        
+    }
+
+    .project-info{
+        padding: 0.65em 0em;
+
+    }
+   .image{
+        padding: 0px;
+        
+    }
+    img, .vid {
+        padding-bottom: 1em;
+        padding-top: 0.86em;
+    }
+  
+    .space-below{
+        padding-bottom: 1em;
+    }
+    .bottom {
+        padding-bottom: 2.5em;
+        
+        }
+        
+}

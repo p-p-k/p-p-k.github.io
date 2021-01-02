@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <title>One-handed calculator – Piotr Kruszyński, interaction designer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icon.png" type="image/png">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom styles for this -->
+    <link href="boot-over.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap " rel="stylesheet">
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="container-fluid header">
+        <div class="col-lg-12 top-menu">
+            <a href="index.html" class="name">Piotr Kruszyński</a>
+            <div class="top-menu-right">
+                <a href="index.html#about" class="top-menu-link" id="ab">About</a>
+                <a href="index.html#contact" class="top-menu-link">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container-fluid project-page">
+        <div class="row">
+            <div class="col-lg-12">
+                <h5 class="descriptor">Mobile interface</h5>
+                <h1 class="single-project main-headline">One-handed calculator</h1>
+                <h2 class="single-project lead">Prototyping a gesture-based mobile app for calculations on the go.
+                </h2>
+                <div class="row image main">
+                    <div class="col-lg-2 col-md-1"></div>
+                    <div class="col-lg-8 col-md-10 vid">
+                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                                src="https://player.vimeo.com/video/393451614"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+
+                    <div class="col-lg-2 col-md-1"></div>
+
+                </div>
+                <p class="single-project long-text">How could mobile apps be redesigned for easier use with one hand
+                    only? What kind of interaction would be
+                    less disruptive while on the move? The brief for this one-week prototyping project suggested two
+                    possible areas to
+                    explore:
+                    <i>the relation between screen size and reach of fingers</i>, and
+                    <i>the demands of different interaction patterns on finger dexterity</i>.</p>
+                <p class="single-project long-text">
+                    Importantly, the assignment required using a widely available digital prototyping tool – one where
+                    you drag and drop rather than write code, that is.</p>
+                <p class="single-project long-text">
+                    With this in mind, I chose
+                    to rework the familiar calculator app.</p>
+
+                <div class="row image">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <img class="img-responsive" src="images/ios-calculator-03.jpg" alt="">
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <img class="img-responsive" src="images/thumb_reach_01.jpg" alt="">
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+                <p class="caption">
+                    Does
+                    <i>one-handed</i> use in fact mean
+                    <i>thumb</i> use? To comfortably hold the phone and use it with the same hand, should all
+                    interactions happen
+                    within thumb’s reach? Apple’s iOS calculator has some buttons that are hard to reach with your thumb
+                    without shifting the phone slightly in your hand. More so, if you have small hands.
+                </p>
+                <h3 class="single-project subhead">Scrapping the buttons</h3>
+
+                <p class="single-project long-text">
+                    Based on my own experience, and talking to friends and family, I made the assumption that the most
+                    common interaction flow for the calculator is:
+
+                </p>
+                <p class="single-project long-text">
+                    <i>enter first number → choose operator → enter second number → hit “equals to”</i>
+                </p>
+                <p class="single-project long-text">
+                    Only one person said they use the <span class="calc-button">%</span> button, and no one I talked to
+                    used the <span class="calc-button">+/-</span> button, or accessed the advanced options by flipping
+                    the phone to landscape mode. For calculations on the go, the essentials then seem to be:
+                </p>
+
+                <ul>
+                    <li>ten digits and a comma</li>
+                    <li>five operators</li>
+                    <li>“clear” and “all clear”</li>
+                </ul>
+                <p class="single-project long-text">
+                    One solution, I thought, to avoid having 18 buttons on the screen, might be to scrap the buttons
+                    altogether. A gesture-based interface could allow people to use a smaller part of the screen, while
+                    still offering the same functions. The space freed up by removing the buttons could hold something
+                    useful that is missing today – a view of numbers entered earlier.
+
+                </p>
+                <p class="single-project long-text">
+                    As part of research, a classmate and I tried out two existing calculator apps – <a
+                        href="https://apps.apple.com/us/app/rechner-calculator/id508837827">Rechner</a>
+                    and <a href="https://apps.apple.com/us/app/sums-gesture-controlled-calculator/id562219615">Sums</a>
+                    – that use gestures for entering operators,
+                    while numbers are entered through regular on-screen buttons. We found swiping across the buttons an
+                    awkward
+                    experience, as there was a sense of conflict between the two modes of input.</p>
+                <div class="row image">
+                    <div class="col-lg-1 col-md-1"></div>
+                    <div class="col-lg-10 col-md-10">
+                        <img class="img-responsive" src="images/rechner-sums.png" alt="">
+                    </div>
+                    <div class="col-lg-1 col-md-1"></div>
+                </div>
+                <p class="caption">Rechner and Sums, two existing calculator apps that combine gestural and button input. Sums also enables users to shake the phone to
+                    clear all calculations, or flip it to negate the current number. Both apps offer a
+                    guide to explain the gesture interaction.
+                </p>
+
+                <p class=" single-project long-text">
+                    Having
+                    realised that most digital prototyping tools support a similarly narrow range of predetermined
+                    interactions, I picked <a href="https://marvelapp.com/">one tool</a> that was free, and decided to see how far
+                    I could
+                    go, attempting to prototype something outside of those conventions.
+                </p>
+                <div class="row image">
+                    <div class="col-lg-3 col-md-3 col-sm-2"></div>
+                    <div class="col-lg-6 col-md-6 col-sm-8">
+                        <img class="img-responsive" src="images/gestures_02.jpg" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-2"></div>
+                </div>
+                <div class="row image">
+                    <div class="col-lg-1 col-md-1 col-sm-0"></div>
+                    <div class="col-lg-5 col-md-5 col-sm-6">
+                        <img class="img-responsive" src="images/calculator_sketch_03.jpg" alt="">
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6">
+                        <img class="img-responsive" src="images/calculator_sketch_04.jpg" alt="">
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-0"></div>
+                </div>
+                <p class="caption">Sketches exploring gesture shape, user guidance display, and – if deciding not to use
+                    gestures after all – some alternative button configurations.</p>
+                <div class="row image">
+                    <div class="col-lg-1 col-md-1"></div>
+                    <div class="col-lg-10 col-md-10">
+                        <img class="img-responsive" src="images/calculator-prototype-01.png" alt="">
+                    </div>
+
+                    <div class="col-lg-1 col-md-1"></div>
+                </div>
+                <p class="caption">A selection of screens from the final prototype.</p>
+                <h3 class=" single-project subhead">Think aloud testing</h3>
+                <p class="single-project long-text">I tested the digital prototype on two classmates, sitting
+                    next
+                    to them, and partly explaining
+                    what to do. They were asked to use one hand only. Unprompted, they thought aloud while testing, and
+                    we also talked immediately afterwards.</p>
+                <p class="single-project long-text">I was curious:
+                </p>
+
+                <ul>
+                    <li>How easy is it to remember the gestures? Are they distinct enough?</li>
+                    <li>Will people use the guide? Is it helpful?
+                    </li>
+                    <li>How is this to use with one hand only, compared to the regular calculator app?
+                    </li>
+                </ul>
+                <p class="single-project long-text">
+                    To be clear: testing the prototype didn’t tell me whether gesture interaction on the move was a good
+                    idea; whether it would be easier, or less disruptive, in a situation where you only have one hand
+                    free. I did, however, learn a few other things that made the exercise worthwhile.</p>
+                <h3 class=" single-project subhead">Takeaways</h3>
+
+                <ol>
+                    <li>The importance of <i>showing people the way, when
+                        introducing less conventional interaction</i>s. The guide was not enough, and that bare
+                    interface meeting you at the start was not very approachable or instructive either. Maybe an opening
+                    animation would be helpful, showing things in place and in motion?</li>
+                <li>
+                    <i>Mixing modes of input is likely to be confusing.</i> After experiencing the issues with the
+                    two
+                    existing apps, which combined gestural input with regular on-screen buttons, I’m not sure why I
+                    thought it would be reasonable to enter operators through gestures and digits by tapping. Having two
+                    ways of input – one based on written language and the other on tap duration – proved difficult to
+                    understand for users.</li>
+                <li>
+                    <i>A prototyping tool meant to do one thing can be used for another</i>, if you’re willing
+                    to give it a try.</li>
+                    </ol>
+                <div class="info-box">
+                    <p class="caption project-info">
+                        <span class="title">Scope<br></span> interaction design, digital prototyping, visual
+                        design, user testing
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid bottom">
+            <div class="row">
+
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <a href="connected-car-key.html">
+                        <img class="img-responsive" src="images/key_13_16x9.jpg" alt="">
+                    </a>
+                    <a href="connected-car-key.html">← Did I lock the car?</a>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-6 col-xs-6"></div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
