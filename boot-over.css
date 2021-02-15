@@ -1,27 +1,119 @@
 
+
+@font-face {
+    font-family: "IBM Plex Serif Text";
+    src: url("/fonts/IBMPlexSerif-Text.woff2") format("woff2"),
+         url("/fonts/IBMPlexSerif-Text.woff") format("woff");
+         font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "IBM Plex Serif Text";
+    src: url("/fonts/IBMPlexSerif-TextItalic-Latin1.woff2") format("woff2"),
+         url("/fonts/IBMPlexSerif-TextItalic-Latin1.woff") format("woff");
+         font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "IBM Plex Serif";
+    src: url("/fonts/IBMPlexSerif-Bold-Latin1.woff2") format("woff2"),
+         url("/fonts/IBMPlexSerif-Bold-Latin1.woff") format("woff");
+         font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "IBM Plex Sans Text";
+    src: url("/fonts/IBMPlexSans-Text.woff2") format("woff2"),
+         url("/fonts/IBMPlexSans-Text.woff") format("woff");
+         font-weight: 400;
+    font-style: normal;
+    font-feature-settings: "ss02";
+  }
+  @font-face {
+    font-family: "IBM Plex Sans";
+    src: url("/fonts/IBMPlexSans-Regular-Latin1.woff2") format("woff2"),
+         url("/fonts/IBMPlexSans-Regular-Latin1.woff") format("woff");
+         font-weight: 400;
+    font-style: normal;
+    font-feature-settings: "ss02";
+  }
+  @font-face {
+    font-family: "IBM Plex Sans Text";
+    src: url("/fonts/IBMPlexSans-TextItalic-Latin1.woff2") format("woff2"),
+         url("/fonts/IBMPlexSans-TextItalic-Latin1.woff") format("woff");
+         font-weight: 400;
+    font-style: italic;
+    font-feature-settings: "ss02";
+
+  }
+  @font-face {
+    font-family: "IBM Plex Sans";
+    src: url("/fonts/IBMPlexSans-Bold.woff2") format("woff2"),
+         url("/fonts/IBMPlexSans-Bold.woff") format("woff");
+         font-weight: 700;
+    font-style: normal;
+    font-feature-settings: "ss02";
+
+  }
+  @font-face {
+    font-family: "IBM Plex Mono";
+    src: url("/fonts/IBMPlexMono-Italic-Latin1.woff2") format("woff2"),
+         url("/fonts/IBMPlexMono-Italic-Latin1.woff") format("woff");
+         font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "IBM Plex Mono";
+    src: url("/fonts/IBMPlexMono-LightItalic-Latin1.woff2") format("woff2"),
+         url("/fonts/IBMPlexMono-LightItalic-Latin1.woff") format("woff");
+         font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "IBM Plex Mono";
+    src: url("/fonts/IBMPlexMono-ExtraLightItalic-Latin1.woff2") format("woff2"),
+         url("/fonts/IBMPlexMono-ExtraLightItalic-Latin1.woff") format("woff");
+         font-weight: 200;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Faune";
+    src: url("/fonts/Faune-Text_Bold.woff2") format("woff2"),
+         url("/fonts/Faune-Text_Bold.woff") format("woff");
+         font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Faune";
+    src: url("/fonts/Faune-Text_Regular.woff2") format("woff2"),
+         url("/fonts/Faune-Text_Regular.woff") format("woff");
+         font-weight: 400;
+    font-style: normal;
+  }
 body {
 /*     max-width: 1500px;
  */    margin: auto;
-    font-family: Georgia, serif;
+    font-family: "IBM Plex Serif Text", Georgia, serif;
     color: #121212;    
     font-size: 15px;
 }
 
 .top-menu-link {
-    padding-left: 1em;
+    margin-left: 1em;
     
 }
 .top-menu {
     justify-content: space-between;
     display: flex;
-    padding: 1.5em 2% 3em;
+    padding: 1.5em 2% 0.5em;
     font-size: 1.4em;
-    font-family: "Roboto", sans-serif;
+    font-family:   "IBM Plex Sans Text", system-ui, -apple-system, sans-serif;
 
 }
 
 .top-menu .name{
     padding-left: 15px;
+    font-family:   "IBM Plex Sans", system-ui, -apple-system, sans-serif;
     font-weight: 700;
     }
 
@@ -41,7 +133,7 @@ footer{
     background-color: #eee;
     width: 100vw;
     font-size: 1.4em;
-    font-family: "Roboto", sans-serif;
+    font-family:   "IBM Plex Sans Text", system-ui, -apple-system, sans-serif;
 }
 .bottom {
 padding-bottom: 4.1em;
@@ -76,37 +168,45 @@ padding-bottom: 1.5em;
 h3 {
     padding-top: 0.5em;
 }
+h5 {
+    font-weight: 400;
+}
 .descriptor {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    font-variant-caps: all-small-caps;
-    font-size: 1.1em;
-    letter-spacing: 0.04em;
-    color: #777;
-    margin-top: 0.5em;
+    font-family:   "IBM Plex Mono", monospace;
+    text-transform: lowercase;
+    font-size: 1.267em;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;  
 }
 .project-page .descriptor {
+    font-weight: 200;
     text-align: center;
-    font-size: 1.3em;
-    margin: 0 0 0.85em;
+    font-size: 2.14em;
+    margin: 1em 0 0.55em;
+/*     color: #595959;
+ */
 }
 .main-headline{
-font-size: 5em;
+font-size: 4.8em;
 padding-bottom: 0.3em;
 line-height: 1.05em;
 text-align: center;
 max-width: 800px!important;
+font-family: "IBM Plex Serif", Georgia, serif;
+font-weight: 700;
+letter-spacing: -0.02em;
 }
 .lead {
 font-size: 2.14em;
 line-height: 1.25em;
 padding-bottom: 0.5em;
 text-align: center;
+max-width: 660px!important;
+font-weight: 400;
+}
 
-}
-.space-below{
-padding-bottom: 2em;
-}
 
 .next-paragraph{
     padding-top:0.625em;
@@ -115,10 +215,14 @@ padding-bottom: 2em;
     text-align: center;
 }
 .project-title{
-    font-size: 1.7em;
+    font-size: 2em;
     line-height: 1.25em;
     margin-top: 0.1em;
     margin-bottom: 6px;
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-weight: 700;
+    
+
 }
 .projects{
     padding-bottom: 4em;
@@ -130,57 +234,64 @@ padding-bottom: 2em;
 .top {
     padding-top: 1.5em;
 }
-.introAndTags{
-    padding-bottom: 1.5em;
-    padding-top: 2em;
-}
+
 .intro {
     font-size: 2em;
     line-height: 1.25em;
-    padding-bottom: 0.5em;
+    padding: 0px;
+    margin: 2em 0px 0.5em;
 }
 
 
 .project-text {
-    font-size: 1.333em;
     padding-bottom: 1em;   
-    margin: 0px; 
+    margin: 0px auto; 
+    font-size: 1.267em;
+    line-height: 1.5;
+    max-width: 500px;
+    text-align: center;
+
 }
 .info {
-    padding-top: 2rem!important;
     padding-bottom: 6rem!important;
     text-decoration: none;
-    font-family: Georgia, serif;
+    font-family: "IBM Plex Serif Text", Georgia, serif;
     font-size: 1em;
 }
 p {
     font-size: 1.333em;
 }
    
-   .container {
+/*    .container {
     width: 100%;
     padding-top: 5%;
     padding-right: 4%;
     padding-left: 4%;
     margin-right: auto;
     margin-left: auto;
-}
+} */
 .about{
-    max-width: 700px;
-    
+    max-width: 605px;
 }
-
+.contact {
+    padding-bottom: 1em;
+}
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
 .project-page {
-    padding-bottom: 2.5em;
+    padding-bottom: 4.5em;
 }
 .single-project, ul, ol, .about p {
-    max-width: 700px;
+    max-width: 605px;
     margin: auto;
 }
-.long-text, ul, ol{
-    font-size: 1.333em;
+.long-text, ul, ol, .about p, .contact p {
+    font-size: 1.267em;
     padding-bottom: 0.8em;
     padding-top: 0.6em;
+    line-height: 1.5;
 }
 ul, ol {
     padding-bottom: 0.2em;
@@ -188,14 +299,27 @@ ul, ol {
 li {
     padding-bottom: 0.6em;
 }
-ol > li::marker{
-    font-family: "Roboto", sans-serif;
-    font-size: 0.95em;
+ol > li::marker {
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-weight: 700;
+}
+.subhead {
+    padding-top: 1em;
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-weight: 700;
+    }
+
+.contact p{
+    padding-bottom: 0;
+    margin: 0;
 
 }
-.about p {
-    font-size: 1.333em;
-    padding-bottom: 1.4em;
+.about h1, .contact h1 {
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1.333em 0 0;
 }
 blockquote{
     max-width: 800px;
@@ -206,37 +330,27 @@ blockquote{
     padding-top: 0.6em;
     padding-left: 0;
     padding-right: 0;
-    border-width: 2px 0px;  
-    border-color: #ddd;
-    font-family: "Roboto", sans-serif;
-    line-height: 1.35;
+    border: none;
+    font-family:   "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    line-height: 1.3;
+    font-weight: 400;
 }
 .quote-source{  
     font-size: 0.55em;
-    font-variant: all-small-caps;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
     line-height: 1.42857;
     padding-top: 0.5em;
-/*     color: black;
- */    /* word-spacing: -0.2em; */
+    font-family:   "Faune", system-ui, -apple-system, sans-serif;
+    font-weight: 400;
+    font-variant-caps: all-small-caps;
 }
 .following-quote{
     border-top: none;
     padding-top: 0px;
     margin-top: -0.15em;
 }
-mark {
-    background-color: #ffff80;
-    padding: 0.3em 0em;
-}
-
-
-/* .image {
-    padding: 0px 0px 3em 0px;
-} */
 .main {
-/* margin-top: -2em;
- */margin-bottom: 1.75em;
+    margin-bottom: 1.75em;
 }
 img, .vid {
     padding-bottom: 1em;
@@ -248,39 +362,53 @@ img, .vid {
 
 .caption{
     font-size: 1.1em;
-    font-family: "Roboto", sans-serif;
-    color: #777;
+    font-family:   "IBM Plex Sans Text", system-ui, -apple-system, sans-serif;
+    color: #595959;
     max-width: 500px;
-    margin: auto;
-    padding-bottom: 2.5em;
+    padding-bottom: 2em;
+    line-height: 1.4;
     
+}
+.multiple-images{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .info-box {
-    padding: 1.7em 0 1em 0;
-    
+    padding: 1.6em 1.2em 1em 0;
+    float: left;
+    max-width: 300px;
+
 }
 .project-info{
-    padding: 0.65em 0em;
-    border-top: 1px solid #C9C9C9;
+    padding: 0 0 0.5em;
+    margin: 0;
 }
 
 .caption .title {
-    color: #000; 
+    font-family:   "Faune", system-ui, -apple-system, sans-serif;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+
 }
 
-.footer-link{
-padding-left: 1.2em;
+footer .info-box{
+    float: none;
+    padding: 2.667em 0 0 0;
+    max-width: 500px;
 }
+footer .caption{
+    margin: 0;
+
+}
+
 .calc-button {
     background-color: rgb(223, 223, 223);
     border-radius: 6px;
     padding: 2px 6px;
-    font-family: "Roboto", sans-serif;
+    font-family:   "IBM Plex Sans Text", system-ui, -apple-system, sans-serif;
 }
-.sans-small-caps{
-    font-variant: all-small-caps;
-letter-spacing: 0.05em;
-    } 
+
 
 
 
@@ -289,92 +417,104 @@ letter-spacing: 0.05em;
 @media (max-width: 671px) {
 	html,
 	body {
-        font-size: 11.5px !important;
-        
+        font-size: 12px !important;
+        line-height: 1.4;
     }
     .top-menu {
         padding-bottom: 1em;
-
+        padding-top: 1em;
     }
     h1, h2 {
-        font-size: 1.85em;
+        font-size: 2em;
         
     }
  p {
-     font-size: 1.55em;
+     font-size: 1.5em;
  }
+
  .descriptor {
-    font-size: 1.65em;
-    margin-top: 0em;
+    font-size: 1.417em;
+    margin-top: 0.2em;
     margin-bottom: 0.4em;
+    font-weight: 400;
+
 }
 .project-page .descriptor {
-    font-size: 1.75em;
+    font-size: 1.583em;
     margin: 0.55em 0 0.53em;
+    font-weight: 400;
+
 }
     .main-headline{
-        font-size: 2.8em;
-        padding-bottom: 0.3em;
-/*         padding-top: 0.85em;
- */        
-
+        font-size: 2.72em;
+        padding-bottom: 0.3em;       
         }
     .lead {
         font-size: 1.85em;
-        /* line-height: 1.25em; */
-        
         }
    
     .subhead {
             font-size: 1.85em;
         }
-    .introAndTags{
-        padding-top: 1em;
-    }
+ 
     .intro {
-        padding-top: 0em;
+        margin: 0.5em 0px 0.9em;
+
     }
+    
     .project-title{
         font-size: 2em !important;
         
     }
-    .project-text {
-        font-size: 1.55em;
+
+    .projects{
         padding-bottom: 1.5em;
     }
     .info {
         padding-top: 0!important;
         padding-bottom: 3.5rem!important;
-/*         font-size: 1.55em !important;
+/*         font-size: 1.65em !important;
  */    }
-    .long-text, ul, ol{
-        font-size: 1.55em;
-    }
+ .long-text, ul, ol, .about p, .contact p, .project-text {
+     line-height: 1.42857;
+     font-size: 1.5em;
+     padding-bottom: 0.6em;
+ }
+
     ul, ol {
         padding-left: 25px;
     }
-    .about p {
-        font-size: 1.55em;
-        padding-bottom: 1.4em;
+  
+    .contact p{
+        font-size: 1.5em;
+        padding-bottom: 0em;
+
     }
+    .project-text {
+        padding-bottom: 1.2em;
+    }
+
     .caption {
         font-size: 1.4em;
         padding-bottom: 1.8em;
-        max-width: 350px;
+        max-width: 500px;
+        line-height: 1.38;
     }
     blockquote{
         font-size: 2em;
     }
     .quote-source{
-        font-size: 0.8em;
+        font-size: 0.7em;
         line-height: 1.2;
         padding-top: 0.3em;
         
+        
     }
-
+    .main {
+        margin-bottom: 0.75em;
+    }
     .project-info{
-        padding: 0.65em 0em;
-
+        padding: 0 0 0.5em;
     }
    .image{
         padding: 0px;
@@ -384,10 +524,13 @@ letter-spacing: 0.05em;
         padding-bottom: 1em;
         padding-top: 0.86em;
     }
-  
-    .space-below{
-        padding-bottom: 1em;
+    .info-box {
+        padding: 0em 0em 0.2em 0;
+        float: none;
+        max-width: 500px;
+    
     }
+   
     .bottom {
         padding-bottom: 2.5em;
         
