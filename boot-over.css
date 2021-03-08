@@ -421,7 +421,12 @@ padding: 1.18em 0 0.4em;
     font-weight: 400;
     font-feature-settings: "ss02";
 }
-
+.no-image {
+    padding-top: 2em;
+}
+.bottom-menu-right.no-image{
+    text-align: right;
+}
 
 /*           SMALL SCREEN         */
 
@@ -556,4 +561,7 @@ padding: 1.18em 0 0.4em;
         .bottom img, .vid{
             padding-bottom: 0.476em;
         }
+    .no-image{
+        padding-top: 0.86em;
+    }
 }
