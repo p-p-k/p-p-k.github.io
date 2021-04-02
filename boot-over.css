@@ -125,6 +125,7 @@ body {
 }    
 .header {
 padding: 0;
+
 }
 .container-fluid{
     max-width: 1500px;
@@ -389,6 +390,7 @@ img, .vid {
     font-variant-caps: all-small-caps;
     letter-spacing: 0.02em;
     font-weight: 700;
+    color: #121212;
 
 }
 
